@@ -1,0 +1,4 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma-rtl.min.css";
+@import 'normalize.css';
+@import 'common.css';
+@import 'app.css';

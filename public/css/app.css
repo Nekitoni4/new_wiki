@@ -1,0 +1,86 @@
+.app__inner {
+    min-height: 500px;
+}
+
+.app__flex_wrapper {
+    display: flex;
+}
+
+.wiki_import {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.wiki_import > * {
+    margin-right: 20px;
+}
+
+.wiki_import input {
+    flex-basis: 20%;
+}
+
+.progress {
+    flex-basis: 30%;
+}
+
+.search_wrapper {
+    display: flex;
+}
+
+.search_wrapper > * {
+    flex-basis: 50%;
+}
+
+.content_frame {
+    max-height: 450px;
+    overflow-y: scroll;
+}
+
+.notification {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    max-width: 500px;
+    transform: translate(0, -100px);
+}
+
+.animate_open{
+    -webkit-animation:moveOpen 4s;
+    -webkin-animation-duration: 5s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.animate_close {
+    -webkit-animation:moveClose 4s;
+    -webkin-animation-duration: 0s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+}
+/* Safari and Chrome */
+@-webkit-keyframes moveOpen
+{
+    from {-webkit-transform: translate(0,-100px);}
+    10% {-webkit-transform: translate(0,20px);}
+    12% {-webkit-transform: translate(0,22px);}
+    16% {-webkit-transform: translate(0,20px);}
+    80% {-webkit-transform: translate(0,20px);}
+    85% {-webkit-transform: translate(0,25px);}
+    to {-webkit-transform: translate(0,-100px);}
+}
+
+@-webkit-keyframes moveClose
+{
+    from {-webkit-transform: translate(0,20px);}
+    to {-webkit-transform: translate(0,-100px);}
+}
+.articles_search {
+    display: flex;
+}
+
+.articles_search > * {
+    margin-right: 10px;
+}
+
+

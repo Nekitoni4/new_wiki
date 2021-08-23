@@ -1,0 +1,15 @@
+:root {
+    --container-padding: 25px;
+}
+
+
+.container {
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+    padding-top: var(--container-padding);
+}
+
+.hidden {
+    display: none;
+}
+
